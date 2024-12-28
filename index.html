@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Meter Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="646cf2c0db5496c5d23d17f3fcc0285d.jpg" alt="Electric Meter Logo">
+                <span>Electric Meter</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">  Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="purpose.html">Purpose</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Electric Meter Management</h1>
+            <p>Track, manage, and monitor your electricity usage efficiently.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Add New Meter</h2>
+            <form id="addMeterForm">
+                <input type="text" id="meterNumber" placeholder="Meter Number" required>
+                <input type="text" id="ownerName" placeholder="Owner Name" required>
+                <input type="number" id="currentReading" placeholder="Current Reading" required>
+                <input type="number" id="previousReading" placeholder="Previous Reading" required>
+                <button type="submit">Add Meter</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Meters List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Meter Number</th>
+                        <th>Owner Name</th>
+                        <th>Current Reading</th>
+                        <th>Previous Reading</th>
+                        <th>Consumption</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="metersList"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Electric Meter Management. Designed with 💡 for professionals.</p>
+    </footer>
+</body>
+</html>
